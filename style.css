@@ -1,0 +1,54 @@
+/* Let's create our grid at first: */
+
+.grid {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    border: 2px solid #ff0000;
+    
+}
+
+/* Now we need to style the whole grid, so that it will look nice :) */
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightsteelblue;
+    color: orangered;
+    border: 2px solid #8c00ff;
+    font-size: 5em;
+}
+
+/* Stretching item number two: */
+
+#two {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background: #8c00ff;
+}
+
+/* Stretching the sixth item: */
+
+#six {
+    grid-column: 3/5;
+    background: #00a509;
+}
+
+/* It's number nine's turn to resize! */
+
+#nine {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background: #fabc00;
+}
+
+/* And finally, number ten grows bigger: */
+
+#ten {
+    grid-column: 4/5;
+    grid-row: 3/5;
+    background: #930080;
+}
